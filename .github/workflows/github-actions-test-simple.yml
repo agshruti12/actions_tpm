@@ -2,7 +2,7 @@ name: Testing Features
 run-name: ${{ github.actor }} is testing feature metrics 🚀
 on: [push]
 jobs:
-  Explore-GitHub-Actions:
+  Testing-Features:
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -19,9 +19,6 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-
-      - name: Run featurizer
-        run: python3 featurize.py
 
       - name: Run tests
         run: |
