@@ -25,17 +25,9 @@ jobs:
           cd testing
           pytest test_feature_metrics.py
 
-      - name: Upload log
+      - name: Upload test results
         uses: actions/upload-artifact@v2
         with:
           name: test-log
           path: ./feature_engine/testing/test.log
         if: ${{ always() }}
-
-      # - name: Upload pytest test results
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: pytest-results
-      #     path: testing
-      #   # Use always() to always run this step to publish test results when there are test failures
-      #

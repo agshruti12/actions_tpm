@@ -1,0 +1,30 @@
+
+------TEST FAILED------
+Testing turn_taking_index for conversation_num: 1
+Expected value: 0.75
+Actual value: 0.75
+
+------TEST FAILED------
+Testing turn_taking_index for conversation_num: 2
+Expected value: 0.0
+Actual value: 0.0
+
+------TEST FAILED------
+Testing turn_taking_index for conversation_num: 3
+Expected value: 1.0
+Actual value: 1.0
+
+------TEST FAILED------
+Testing turn_taking_index for conversation_num: 4
+Expected value: 0.4
+Actual value: 0.4
+
+------TEST FAILED------
+Testing turn_taking_index for conversation_num: 5
+Expected value: 0.8
+Actual value: 0.8
+
+------TEST FAILED------
+Testing turn_taking_index for conversation_num: 6
+Expected value: 0.125
+Actual value: 0.125

@@ -25,11 +25,6 @@ def test_chat_unit_equality(row):
             file.write(f"Testing {row[1]['expected_column']} for message: {row[1]['message_original']}\n")
             file.write(f"Expected value: {expected}\n")
             file.write(f"Actual value: {actual}\n")
-        # logging.error("")
-        # logging.error("------TEST FAILED------")
-        # logging.error("Testing %s for message: %s ", row[1]['expected_column'], row[1]['message_original'])
-        # logging.error("Expected value: %s ", expected)
-        # logging.error("Actual value: %s", actual)
 
         raise  # Re-raise the AssertionError to mark the test as failed
 
@@ -45,18 +40,13 @@ def test_conv_unit_equality(conversation_num, conversation_rows):
         expected = row['expected_value']
     
     try:
-        assert actual != expected
+        assert actual == expected
     except AssertionError:
         expected_out = expected
         actual_out = actual
         test_failed = True
 
     if test_failed:
-        # logging.error("")
-        # logging.error("------TEST FAILED------")
-        # logging.error("Testing %s for conversation_num: %s ", row['expected_column'], conversation_num)
-        # logging.error("Expected value: %s ", expected_out)
-        # logging.error("Actual value: %s", actual_out)
         with open('test.log', 'a') as file:
             file.write("\n")
             file.write("------TEST FAILED------\n")
